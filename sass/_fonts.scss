@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Montserrat Semibold';
+    src: url('../fonts/Montserrat-SemiBold.eot');
+    src: url('../fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-SemiBold.woff') format('woff'),
+    url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Nunito Sans Light';
+    src: url('../fonts/NunitoSans-Light.eot');
+    src: url('../fonts/NunitoSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NunitoSans-Light.woff') format('woff'),
+    url('../fonts/NunitoSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@mixin bold {
+    font-family: 'Montserrat Semibold', sans-serif;
+}
+@mixin light {
+    font-family: 'Nunito Sans Light', sans-serif;
+}

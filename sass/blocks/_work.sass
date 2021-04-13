@@ -1,0 +1,20 @@
+.work
+    background-color: $primary
+    background: cover
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        min-height: 150px
+    p
+        display: inline-block
+        margin-left: 0px
+        font-size: 12px
+        color: #ffffff
+        text-transform: uppercase
+        +bold
+@media (max-width: 667px)
+    .work
+        &__wrap
+            flex-direction: column
+            text-align: center

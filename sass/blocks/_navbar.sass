@@ -1,0 +1,80 @@
+.navbar
+    background-color: #e9e9e9
+    z-index: 99
+    border-bottom: 1px solid #cbcbcb
+    &-wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        min-height: 80px
+    &__mobile, &__landline
+        text-align: right
+    &__phone
+        display: block
+        margin-bottom: 5px
+        font-size: 19px
+        +bold
+        text-decoration: none
+        color: $text-color
+    &__small-text
+        font-size: 14px;
+        color: $text-color-light
+        text-decoration: none
+.menu
+    position: fixed
+    z-index: 0
+    top: 80px
+    width: 100%
+    padding: 16px 0
+    background-color: $primary
+    color: #ffffff
+    transition: 0,2s
+    transform: translateY(-300%)
+    &_active
+        transform: translateY(0%)
+    &__nav
+        display: flex
+        align-items: center
+        justify-content: space-around
+    &__link
+        text-decoration: none
+        font-size: 17px
+        text-transform: uppercase
+        color: #ffffff
+    &-button
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background-color: transparent
+        border: none
+        border-right: 1px solid #cbcbcb
+        border-left: 1px solid #cbcbcb
+        height: 80px
+        width: 70px
+        &__line
+            display: block
+            width: 20px
+            height: 3px
+            background-color: #0c0c0c
+            margin: 2px 0
+.logo
+    display: block
+@media (max-width: 675px)
+    .navbar
+        &__mobile, &__landline  
+            display: none
+@media (max-width: 380px)
+    .logo
+        display: none 
+@media (max-width: 576px)
+    .menu
+        height: 50%
+        transform: translateY(-300%)
+        &__nav
+            flex-direction: column
+        &__link
+            margin-bottom: 20px
+ 
+     
+        
